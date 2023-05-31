@@ -1,0 +1,26 @@
+
+#classes {
+    width: 100%;
+    
+}
+.boxcontainer  {
+    border:solid .5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px;
+    width: 45%;
+    margin:auto;
+    height: 200px;
+}
+.content {
+    margin:3%;
+}
+.title { 
+    text-align: center;
+    font-size:25px;
+}
+.buttons {
+    float:right;
+    margin-right:3%;
+
+    
+}
