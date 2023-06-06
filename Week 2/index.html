@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gateway Community College</title>
+    <style>
+        * {
+            font-family:  sans-serif;
+        }
+        body {
+            border:solid 3px;
+        }
+        footer {
+            display: grid;
+            grid-template-columns: 75% 25% ;
+            grid-template-rows: 40% 60%;
+
+        }
+        box1 {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            grid-column:span 1;
+            grid-row: span 2;
+            align-items: center;
+
+        }
+        .textlinks {
+            margin-left:13px;
+            
+        }
+        box2 { 
+            grid-row: span 2;
+        
+        }
+        a, li {
+            text-decoration: none;
+            color:white;
+            list-style-type: none;
+        }
+        main {
+            text-align: center;
+            margin-bottom: 100px;
+            color:rgb(0, 51, 161);
+        }
+        box1, box2 {
+            background: rgb(0, 51, 161)
+        }
+        icon {
+
+            grid-row: span 1; 
+        }
+        ul {
+           display:flex;
+            grid-row: span 1;
+            align-items: center;
+            margin-inline: 5px;
+            flex-wrap: wrap;
+        }
+        li {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Gateway Community College</h1>
+    </main>
+    <footer>
+        <box1>
+        <div class="textlinks" ><a href="https://www.scottsdalecc.edu/college-police" title="College Police" >College&nbsp;Police</a></div>
+        <div class="textlinks"><a href="https://www.scottsdalecc.edu/disclosures" title="Disclosures">Disclosures</a></div>
+        <div class="textlinks"><a href="https://www.scottsdalecc.edu/human-resources" title="Jobs">Jobs</a></div>
+        <div class="textlinks"><a href="https://library.scottsdalecc.edu/index" title="SCC Library">Library</a></div>
+        <div class="textlinks"><a href="https://directory.scottsdalecc.edu/" title="SCC Faculty Directory">SCC&nbsp;Faculty&nbsp;Directory</a></div>
+        <div class="textlinks"><a href="https://www.scottsdalecc.edu/students/technology/scc-help-desk" title="SCC Help Desk" >SCC&nbsp;Help&nbsp;Desk</a></div>
+        <div class="textlinks"><a href="http://www.wunderground.com/personal-weather-station/dashboard?ID=KAZSCOTT198" title="SCC Weather">SCC&nbsp;Weather</a></div>
+        <div class="textlinks"><a href="https://www.scottsdalecc.edu/students/policies/nondiscrimination-policy#titleix title="Title IX Coordinator" >Title&nbsp;IX&nbsp;Coordinator</a></div>
+        </box1>
+        <box2>
+            <icon>
+                <img src="./images/athletics.svg" alt="Fighting Artichokes Logo">
+            </icon>
+        <ul>
+            <li><img src="./images/twitter.png" alt="Twitter Icon"></li>
+            <li><img src="./images/facebook.png" alt="Facebook Icon"></li>
+            <li><img src="./images/youtube.png" alt="YouTube Icon"></li>
+            <li><img src="./images/insta.png" alt="Instagram Icon"></li>
+            <li><img src="./images/in.png" alt="LinkedIn Icon"></li>
+            <li><img src="./images/tiktok.png" alt="TikTok Icon"></li>
+        </ul>
+        </box2>
+    </footer>
+</body>
+</html>
