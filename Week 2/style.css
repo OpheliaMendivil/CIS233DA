@@ -1,0 +1,112 @@
+/*
+colors:
+Pink Red rgb(247,219,229)
+Dark Red rgb(96,10,42)
+*/
+main {
+    display: flex;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:xx-large;
+    color: rgb(247,219,229);
+    flex-wrap: nowrap;
+    height:80vh;
+    }
+    .titlecolor {
+        background: #ff00008c;
+        height:1em;
+        font-family:"new-rocker";
+        border: 5px solid;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+    }
+    
+    footer{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    background-color: rgb(247, 219, 232);
+    min-height:20vh;
+    }
+    
+    .nav_links{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    }
+    
+    .logo_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    list-style-type: none;
+    flex-wrap: wrap;
+    }
+    
+    a{
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    body {
+        background-color: rgb(96,10,42);
+        background-image: url("/images/randompunkbandedited.webp");
+        background-size: cover;
+    }
+    .calander {
+        display:grid;
+        grid-template-columns: repeat(7, 75px);
+        gap: 6px;
+        color:white;
+    }
+    month {
+        grid-column: span 7;
+        background:blue;
+        height: 30px;
+        width: 100%;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    leader,trailer {
+        background-color:rgb(40,40,40);
+    }
+    leader, trailer, day {
+        border-radius: 8px;
+        height: 60px;
+        width: 100%;
+    }
+    leader {
+        grid-column: span 3;
+    }
+    trailer {
+        grid-column: span 4; 
+    }
+    day {
+    box-sizing: border-box;
+    text-align: right;
+    padding: 2px 4px 0px;
+    background-color: lightblue;
+    border-radius: 8px;
+    }
+    #myBirthday {
+    background-color:red;
+    }
+
+    @font-face {
+        font-family: "new-rocker";
+        src: url('new-rocker/NewRocker-Regular.otf') format("opentype"); 
+    }
+        

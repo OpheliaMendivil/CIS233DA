@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
+            * {
             background:black;
         }
-        body {
+        .calander {
             display:grid;
             grid-template-columns: repeat(7, 75px);
             gap: 6px;
@@ -39,19 +39,20 @@
         trailer {
             grid-column: span 4; 
         }
-       day {
+        day {
         box-sizing: border-box;
         text-align: right;
         padding: 2px 4px 0px;
         background-color: lightblue;
         border-radius: 8px;
-       }
-       #myBirthday {
+        }
+        #myBirthday {
         background-color:red;
-       }
+        }
+
     </style>
 </head>
-<body>
+<div class="calander">
 <month>
     October 2023
 </month>
@@ -85,5 +86,5 @@
 <day>27</day>
 <day>28</day>
 <trailer></trailer>
-</body>
+</div>
 </html>
