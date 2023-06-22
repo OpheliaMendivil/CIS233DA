@@ -1,0 +1,121 @@
+/*
+Colors:
+Mint Green rgb(177, 243, 177)
+Blue rgb(44, 44, 231)
+Tan rgb(163, 149, 119)
+Sky Blue rgb(168, 235, 240)
+*/
+.container {
+    background: rgb(177, 243, 177);
+    border: 2px solid black;
+    padding: 1em;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.container h1 {
+    display: flex;
+    background: rgb(44, 44, 231);
+    color: white;
+    padding: 25px;
+    justify-content: center;
+}
+
+.vbox, .hbox, nav {
+    display: flex;
+}
+.vbox {
+    flex-direction: column;
+}
+.hbox, nav {
+    flex-direction: row;
+
+}
+
+.city {
+    display: block;
+    width: 25vw;
+    padding: 2.5em 1em;
+    text-align: center;
+    margin: 6px;
+    color:white;
+    border: solid black 2px;
+}
+
+
+.selectedc, .temp {
+    background: rgb(44, 44, 231);
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    color: white;
+    border: solid black 2px;
+}
+
+.textbox, .images {
+    padding: 1em;
+    margin: 1em;
+}
+.navtitle {
+    background-color:rgb(163, 149, 119);
+    padding: 5px;
+    border-radius: 6px;
+}
+.textbox .inner {
+    border: 1px solid black;
+    display: block;
+    padding: 1em;
+    background-color: rgb(168, 235, 240);
+}
+
+
+.selectedc {
+    flex: 2;
+}
+.temp {
+    flex: 1;
+}
+
+.textbox {
+    flex: 2;
+}
+
+.images {
+    flex: 1;
+}
+
+.images img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+select {
+    display: none;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    select {
+        display: block;
+        background: lightblue;
+        border: none;
+        padding: 1em;
+        text-align: center;
+        margin: 6px;
+    }
+    nav {
+        display: none;
+    }
+    .hbox.content { 
+        flex-direction: column;
+    }
+    .images img {
+        display: block;
+        width: 100%;
+    }
+}
