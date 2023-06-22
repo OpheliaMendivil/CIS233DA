@@ -68,7 +68,6 @@ body {
     background-color: rgb(168, 235, 240);
 }
 
-
 .selectedc {
     flex: 2;
 }
@@ -78,6 +77,8 @@ body {
 
 .textbox {
     flex: 2;
+    justify-content: center;
+    align-items: center;
 }
 
 .images {
@@ -92,10 +93,23 @@ body {
 select {
     display: none;
 }
-
+iframe {
+    width:100%;
+    margin-top:5%;
+}
 /* Tablet */
 @media screen and (max-width: 1024px) {
+    .hbox.content { 
+        flex-direction: column;
+    }
+    .vbox.images{
+        flex-direction: row;
+        justify-content: center;
     
+    }
+    .vbox.images img {
+        width: 20vw;
+    }
 }
 
 /* Mobile */
