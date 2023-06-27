@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Cool Mexico Cities</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="vbox">
+        <h1>Interesting Cities in Mexico to Visit!</h1>
+        <nav>
+            <div class="city" onclick="getCity('Cuernavaca')" id="a" style="background-image: url('./Images/StreetsCuernavaca.jpg');background-size: cover;"><span class="navtitle">Cuernavaca</span></div>
+            <div class="city" onclick="getCity('Mexico City')" id="b" style="background-image: url('./Images/MexicoCity.jpg');background-size: cover;"><span class="navtitle">Mexico City</span></div>
+            <div class="city" onclick="getCity('Guasave')" id="c" style="background-image: url('./Images/GuasaveBeach.jpg');background-size: cover;"><span class="navtitle">Guasave</span></div>
+            <div class="city" onclick="getCity('Cancun')" id="d" style="background-image: url('./Images/Cancun.jpg');background-size: cover;"><span class="navtitle">Cancun</span></div>
+            <div class="city" onclick="getCity('Guadalajara')" id="e" style="background-image: url('./Images/Guadalajara-Jalisco\ landscape.jpg');background-size: cover;"><span class="navtitle">Guadalajara</span></div>
+        </nav>
+        <select>
+            <option>City</option>
+            <option>Cuernavaca</option>
+            <option>Mexico City</option>
+            <option>Guasave</option>
+            <option>Cancun</option>
+            <option>Guadalajara</option>
+        </select>
+        <div class="hbox">
+            <div class="selectedc">Cuernavaca</div>
+            <div class="temp">Temp.</div>
+        </div>
+        <div class="hbox content">
+            <div class="textbox">
+                <span class="inner">
+                Morelos is a place where you will find tons of cultural significance, natural wonders, and a rich historical legacy. Referred to as the "City of Eternal Spring," Cuernavaca has a very delightful and pleasant climate throughout the year, offering an open invitation to explore its many attractions. Some attractions include the Palacio de Cortes, a fortress-turned-museum that dates to the 16th century, showcasing impressive architecture. The Jardín Borda, once the private retreat of Emperor Maximilian I, showcases magnificent gardens that will show you the bygone era of opulence and splendor.   The downtown area is full of vibrant ambience, where you can find beautiful streets adorned with colonial-style buildings. This place offers great hiking trails at the Tepozteco pyramids.
+                </span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/S2ZE6tlcUEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <audio src="Zoe_Mexican_Group_-_Nada__O_O4XesuA4.webm" controls></audio>
+            </div>
+            
+            <div class="vbox images">
+                <img src='./Images/StreetsCuernavaca.jpg'>
+                <img src='./Images/Tepozteco pyramids.jpg'>
+                <img src='./Images/Palacio_de_Cortés_Cuernavaca.jpg'>
+                <img src='./Images/Jardin_borda.jpg'>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./Scripts/JS.js"></script>
+</body>
+</html>
+        
