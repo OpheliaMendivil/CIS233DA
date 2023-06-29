@@ -21,16 +21,16 @@
             <div class="city" onclick="getCity('Guadalajara')" id="e" style="background-image: url('./Images/Guadalajara-Jalisco\ landscape.jpg');background-size: cover;"><span class="navtitle">Guadalajara</span></div>
         </nav>
         <select>
-            <option>City</option>
-            <option>Cuernavaca</option>
-            <option>Mexico City</option>
-            <option>Guasave</option>
-            <option>Cancun</option>
-            <option>Guadalajara</option>
+            <option onclick="getCity('Cuernavaca')">City</option>
+            <option onclick="getCity('Cuernavaca')">Cuernavaca</option>
+            <option onclick="getCity('Mexico City')">Mexico City</option>
+            <option onclick="getCity('Guasave')">Guasave</option>
+            <option onclick="getCity('Cancun')">Cancun</option>
+            <option onclick="getCity('Guadalajara')">Guadalajara</option>
         </select>
         <div class="hbox">
             <div class="selectedc">Cuernavaca</div>
-            <div class="temp">Temp.</div>
+            <div class="temp">Temp: <span class="number"></span> °F</div>
         </div>
         <div class="hbox content">
             <div class="textbox">

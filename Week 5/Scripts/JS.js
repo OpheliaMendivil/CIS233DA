@@ -3,6 +3,7 @@ let cityBox = document.querySelector('.selectedc');
 let cityDescription = document.querySelector('.inner');
 let cityPics = document.querySelector('.vbox.images');
 function getCity(selectedCity) {
+    getWeather(selectedCity);
     if(selectedCity == "Cuernavaca"){
         var cityButton = document.querySelector('.city#a');
         cityBox.innerHTML = 'Cuernavaca';
@@ -50,5 +51,14 @@ function getCity(selectedCity) {
     }
     currentCityButton.classList.remove('selected')
     cityButton.classList.add('selected')
-    currentCityButton = cityButton
+    currentCityButton = cityButton   
 }
+
+const apiKey = "201774febe5cb1d90661c0368dd5da01";
+
+function getWeather(cityName) {
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' +cityName+'&appid='+apiKey+'&units=imperial').then(infoRecieved => infoRecieved.json()).then(json => {
+        document.querySelector(".temp .number").innerHTML = json.main.temp;
+    })
+}
+getWeather("Phoenix, Arizona") 

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Joke Generator!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    .container {
+        background-color: #ffc8f1;
+      text-align: center;
+      margin-top: 50px;
+      border:solid rgb(95, 226, 255);
+      border-radius: 5%;
+      box-shadow: 10px 10px 5px #aaaaaa;
+      margin:15%;
+      
+    }
+
+    h1 {
+      color: #c014ff;
+    }
+    h2 {
+        border:solid;
+        width:fit-content;
+        margin:0 auto;
+        border-radius: 50%;
+        height: 2em;
+        line-height: 2em;
+        margin-top: 5%;
+        border: solid rgb(255, 101, 196);
+        
+    }
+    p {
+      color: #504747;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #ff49d8;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #fb0000;
+    }
+
+    #jokeText {
+      font-size: 18px;
+      color: #ff0077;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>^~^</h2>
+    <h1>Joker Generator <3</h1>
+    <p>Click the button to get a random joke:</p>
+    <button id="generateBtn" onclick="getJoke()">Get Joke</button>
+    <p id="jokeText"></p>
+  </div>
+
+  <script>
+    function getJoke() {
+      fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit') // Exclude offensive, explicit, and sensitive joke categories
+        .then(response => response.json())
+        .then(data => {
+          if (data.type === 'single') {
+            document.getElementById('jokeText').innerText = data.joke;
+          } else if (data.type === 'twopart') {
+            document.getElementById('jokeText').innerHTML = `${data.setup}<br>${data.delivery}`;
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }
+  </script>
+</body>
+</html>
