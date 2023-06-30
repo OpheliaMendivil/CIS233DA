@@ -43,7 +43,7 @@ body {
 }
 
 
-.selectedc, .temp {
+.selectedc, .weather {
     background: rgb(44, 44, 231);
     padding: 1em;
     margin: 1em;
@@ -69,10 +69,11 @@ body {
 }
 
 .selectedc {
-    flex: 2;
+    flex: .5;
 }
-.temp {
-    flex: 1;
+.weather {
+    flex: 2.5;
+    display:flex;
 }
 
 .textbox {

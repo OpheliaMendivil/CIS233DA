@@ -58,7 +58,11 @@ const apiKey = "201774febe5cb1d90661c0368dd5da01";
 
 function getWeather(cityName) {
     fetch('https://api.openweathermap.org/data/2.5/weather?q=' +cityName+'&appid='+apiKey+'&units=imperial').then(infoRecieved => infoRecieved.json()).then(json => {
-        document.querySelector(".temp .number").innerHTML = json.main.temp;
+        document.querySelector(".weather .temperature").innerHTML = 'Temp: ' + json.main.temp + '°F';
+        document.querySelector(".weather .description").innerHTML = 'Description: ' + json.weather[0].description;
+        document.querySelector(".weather .humidity").innerHTML = 'Humidity: ' + json.main.humidity + ' %';
+        document.querySelector(".weather .wind").innerHTML = 'Wind: ' + json.wind.speed + ' mph';
+        document.querySelector(".weather .pressure").innerHTML = 'Pressure: ' + json.main.pressure + ' psi';
     })
 }
 getWeather("Phoenix, Arizona") 
